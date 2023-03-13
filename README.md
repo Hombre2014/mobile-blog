@@ -18,7 +18,8 @@ Full stack mobile blog application with admin panel.
 ## Built With
 
 - Major languages: JavaScript
-- Frameworks: React Native, Node.js, Express.js, MongoDB
+- Frameworks: React Native, Node.js, Express.js
+- Database: MongoDB
 
 ## Live Demo
 
