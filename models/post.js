@@ -18,9 +18,6 @@ const postSchema = mongoose.Schema({
   },
   tags: [String],
   author: {
-    // When we are using many users as authors and authentication is implemented,
-    // type: mongoose.Schema.Types.ObjectId,
-    // ref: 'User',
     type: String,
     default: 'Admin'
   },
