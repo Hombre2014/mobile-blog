@@ -9,34 +9,36 @@ const postSchema = mongoose.Schema({
   content: {
     type: String,
     required: true,
-    trim: true
+    trim: true,
   },
   meta: {
     type: String,
     required: true,
-    trim: true
+    trim: true,
   },
   tags: [String],
   author: {
+    // type: mongoose.Schema.Types.ObjectId,
+    // ref: 'User', // User model if we have many users/authors
     type: String,
-    default: 'Admin'
+    default: 'Admin',
   },
   slug: {
     type: String,
     required: true,
     trim: true
-  }
+  },
   thumbnail: {
     type: Object,
     url: {
-      type: URL
+      type: URL,
     },
     public_id: {
-      type: String
+      type: String,
     }
   },
 }, {
-  timestamps: true
+  timestamps: true,
 });
 
 module.exports = mongoose.model('Post', postSchema);
